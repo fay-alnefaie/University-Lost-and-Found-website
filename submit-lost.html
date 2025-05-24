@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Lost Item</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="u.png" height="100px" width="100px" alt="University Logo">
+        <h1>University Lost and Found</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="submit-lost.html">Submit Lost Item</a></li>
+                <li><a href="submit-found.html">Submit Found Item</a></li>
+                <li><a href="view-posts.html">View Recent Posts</a></li>
+                <li><a href="faq.html">Common Questions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Submit Lost Item</h2>
+        <form id="lostItemForm">
+            <label for="item-location">Was the item lost inside a building?</label>
+            <select id="item-location" name="item-location" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br>
+            <label for="building-name">Building Name:</label>
+            <input list="building-names" id="building-name" name="building-name">
+            <datalist id="building-names">
+                <option value="أ">
+                <option value="ب">
+                <option value="ج">
+                <option value="د">
+                <option value="و">
+                <option value="ه">
+                <option value="ي">
+                <option value="ط">
+                <option value="ز">
+                <option value="ح">
+                <option value="جسر المشاة">
+                <option value="بوابة 1">
+                <option value="بوابة 2">
+                <option value="بوابة 3">
+                <option value="بوابة 4">
+            </datalist><br>
+            <label for="class-number">Class Number:</label>
+            <input type="text" id="class-number" name="class-number"><br>
+            <label for="item-type">Type of Lost Item:</label>
+            <input list="item-types" id="item-type" name="item-type" required>
+            <datalist id="item-types">
+                <option value="Accessories">
+                <option value="Glasses">
+                <option value="Books">
+                <option value="Bag">
+                <option value="Electronics">
+                <option value="Clothing">
+                <option value="Documents">
+            </datalist><br>
+            <label for="item-description">Item Description:</label>
+            <textarea id="item-description" name="item-description" required></textarea><br>
+            <label for="lost-date">Date Lost:</label>
+            <input type="date" id="lost-date" name="lost-date" required><br>
+            <label for="contact-info">Contact Information:</label>
+            <input type="text" id="contact-info" name="contact-info" required><br>
+            <label for="additional-info">Additional Information:</label>
+            <textarea id="additional-info" name="additional-info"></textarea><br>
+            <label for="upload-photo">Attach Photo (max 5 MB, images only):</label>
+            <input type="file" id="upload-photo" name="upload-photo" accept=".jpg, .jpeg, .png"><br>
+            <h3>Owner's Information</h3>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required><br>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+            <label for="id-type">ID Type:</label>
+            <select id="id-type" name="id-type" required>
+                <option value="">Select</option>
+                <option value="national-id">National ID</option>
+                <option value="passport">Passport</option>
+                <option value="student-id">Student ID</option>
+            </select><br>
+            <label for="id-number">ID Number:</label>
+            <input type="text" id="id-number" name="id-number" required><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 University Lost and Found</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Recent Posts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="u.png" height="100px" width="100px" align="right" alt="University Logo" />
+        <h1 align="left">University Lost and Found</h1>
+        <nav align="right">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="submit-lost.html">Submit Lost Item</a></li>
+                <li><a href="submit-found.html">Submit Found Item</a></li>
+                <li><a href="view-posts.html">View Recent Posts</a></li>
+                <li><a href="faq.html">Common Questions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Recent Posts</h2>
+        <div id="filterContainer">
+            <label for="item-type-filter">Item Type:</label>
+            <select id="item-type-filter">
+                <option value="">All</option>
+                <option value="Accessories">Accessories</option>
+                <option value="Glasses">Glasses</option>
+                <option value="Books">Books</option>
+                <option value="Bag">Bag</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Documents">Documents</option>
+            </select>
+            
+            <label for="item-status-filter">Status:</label>
+            <select id="item-status-filter">
+                <option value="">All</option>
+                <option value="lost">Lost</option>
+                <option value="found">Found</option>
+            </select>
+
+            <label for="date-range-filter">Date Range:</label>
+            <input type="date" id="date-start-filter">
+            <input type="date" id="date-end-filter">
+            <button id="filter-button">Filter</button>
+        </div>
+        <div id="postsContainer"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 University Lost and Found</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
